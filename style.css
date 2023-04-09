@@ -145,6 +145,8 @@ nav li {
   margin: 0px 1rem;
 }
 
+/********************* PORTFOLIO SITE *********************/
+
 /* Header */
 #header_portfolio {
   display: flex;
@@ -250,25 +252,23 @@ header p {
 #styletile {
   max-width: 80vw;
   padding: 1rem;
-margin: 3rem;
-background-color: var(--color-accent2);
-min-width: 40vw;
+  margin: 3rem;
+  background-color: var(--color-accent2);
+  min-width: 40vw;
 }
 
-#opposite_img{
-  order:-1;
+#opposite_img {
+  order: -1;
 }
 
 /* Product section 2 */
-#NBU_redesign{
-background-color: var(--color-accent1);
+#NBU_redesign {
+  background-color: var(--color-accent1);
 }
 
-#NBU_redesign a{
+#NBU_redesign a {
   color: white;
-  }
-
-
+}
 
 /* Highlight section */
 
@@ -312,16 +312,15 @@ background-color: var(--color-accent1);
   padding-block: 2rem;
 }
 
-
 .text {
   max-width: 50ch;
 }
 
-.img_highlight{
-object-fit: cover;
-aspect-ratio: 2/1;
-max-width: 600px;
-min-width: 300px;
+.img_highlight {
+  object-fit: cover;
+  aspect-ratio: 2/1;
+  max-width: 600px;
+  min-width: 300px;
 }
 
 .img {
@@ -329,7 +328,7 @@ min-width: 300px;
 }
 
 .img p {
- padding:0px;
+  padding: 0px;
 }
 
 /* Highlight section 2 */
@@ -348,49 +347,6 @@ min-width: 300px;
   color: white;
 }
 
-/*CARDS*/
-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-#cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 3rem;
-  margin-bottom: 2rem;
-  min-height: 40vh;
-  min-width: 200px;
-}
-
-#cards img {
-  border-radius: 10px 10px 0 0;
-  aspect-ratio: 2/1;
-}
-
-#cards p {
-  font-size: 1rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  box-shadow: black 0px 7px 10px 0px;
-  border-radius: 10px;
-  min-height: 80vh;
-  min-width: 350px;
-}
-
-.card_text {
-  max-width: 40ch;
-  text-align: left;
-  padding: 10px;
-  overflow-wrap: break-word;
-  justify-content: start;
-  min-height: 45vh;
-}
-
 .bold {
   font-weight: 600;
   font-size: larger;
@@ -399,12 +355,6 @@ img {
 .italic {
   font-weight: 400;
   font-style: italic;
-}
-
-/* request section */
-.request_container {
-  padding: 5rem;
-  background-color: var(--color-accent2);
 }
 
 /* summary section */
@@ -429,6 +379,158 @@ img {
   color: white;
 }
 #summary h3 {
+  color: white;
+}
+
+/************** CV SITE *************/
+#CV {
+  padding: 5rem;
+  margin-bottom: 2rem;
+}
+
+#header_CV {
+  background-color: var(--color-secondary2);
+  padding: 2rem;
+  padding: 5rem;
+  color: #eee;
+}
+
+#header_CV img {
+  max-width: 50vw;
+  max-height: 40vw;
+}
+.make_light {
+  color: var(--color-accent2);
+  margin: 0px;
+  place-content: end;
+  display: grid;
+}
+
+.icon_article h3 {
+  display: grid;
+  place-content: end;
+  margin: 0px;
+  padding: 0px;
+}
+
+.flex_col {
+  display: flex;
+  gap: 4rem;
+}
+
+figure {
+  margin-bottom: 5rem;
+}
+
+#info {
+  line-height: 2rem;
+}
+
+/* ICON SECTION */
+
+#info p {
+  text-align: left;
+}
+
+svg {
+  margin: 0px;
+  margin-right: 20px;
+}
+
+.icon_and_text {
+  display: flex;
+  margin-bottom: 1rem;
+  max-width: 60vw;
+}
+
+.icon_and_text h1 {
+  font-size: 1.3rem;
+  padding: 0px;
+  padding-left: 5%;
+}
+
+.underline {
+  border-bottom: 2px solid var(--color-accent2);
+}
+
+.underline_white {
+  border-bottom: 2px solid var(--color-accent1);
+}
+
+/* SKILLS  */
+#skill_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+#skills_text {
+  font-family: "bebas-neue", sans-serif;
+  font-size: 25px;
+  margin: 0%;
+}
+
+#skills_text li {
+  line-height: 30px;
+  padding-block: 5%;
+}
+
+.skills {
+  padding: 0%;
+}
+
+#skill_level {
+  width: 100px;
+  height: auto;
+}
+
+/* SKILL BAR DOTS */
+.dot-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+
+.pink {
+  background-color: var(--color-accent1);
+  border: none;
+}
+
+.space {
+  padding-block: 10px;
+}
+#all_the_dots {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dot_article {
+  padding-block: 5%;
+  align-self: flex-start;
+}
+
+.grid_col_skills {
+  max-width: 60vw;
+  display: grid;
+}
+
+.skills {
+  padding: 5rem;
+}
+
+/* EDUCATION  */
+#education {
+  padding: 2rem;
+  background-color: var(--color-accent1);
   color: white;
 }
 
@@ -514,7 +616,6 @@ footer p {
     font-size: 1.35rem;
   }
 
-
   /* PORTFOLIO */
 
   /* product section */
@@ -525,37 +626,34 @@ footer p {
   }
 
   #styletile {
-    order:1;
+    order: 1;
     min-width: 250px;
     min-height: 150px;
     padding: 1rem;
-  margin: 3rem;
-  background-color: var(--color-accent2);
-  } 
+    margin: 3rem;
+    background-color: var(--color-accent2);
+  }
 
-.product {
- display: grid;
- padding: 0px;
-}
-.product article{
-  display: grid;
-  align-items: start;
- }
- .product .product_text {
-  padding: 2rem;
- }
+  .product {
+    display: grid;
+    padding: 0px;
+  }
+  .product article {
+    display: grid;
+    align-items: start;
+  }
+  .product .product_text {
+    padding: 2rem;
+  }
 
+  .product_graphics {
+    order: 1;
+  }
 
- .product_graphics{
-  order:1;
- }
-
- #opposite_img{
-  display: grid;
-  order:1;
-}
-
-
+  #opposite_img {
+    display: grid;
+    order: 1;
+  }
 
   /* highlight section */
   .highlight div h2 {
@@ -563,19 +661,19 @@ footer p {
     line-height: 3.5rem;
   }
 
-  .highlight  {
+  .highlight {
     padding: 1.5rem;
   }
 
-  .img_highlight{
+  .img_highlight {
     object-fit: cover;
     aspect-ratio: 2/1;
     max-width: 400px;
-    }
+  }
 
   .container {
     display: grid;
-    gap: 1rem; 
+    gap: 1rem;
     padding-block: 2rem;
   }
 
@@ -588,41 +686,47 @@ footer p {
     display: grid;
   }
 
-  /* CARDS*/
+  /************** CV SITE *************/
 
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  #cards {
+  #header_CV {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 1rem;
-    margin: 2rem;
+    min-height: 120vh;
+    padding: 2rem;
+    padding-bottom: 4rem;
   }
 
-  #cards img {
-    border-radius: 10px 10px 0 0;
+  figure {
+    margin: 0px;
   }
 
-  .card {
-    display: flex;
-
-    flex-direction: column;
-    background-color: white;
-    box-shadow: black 0px 7px 10px 0px;
-    border-radius: 10px;
-    max-height: 30vh;
-    min-width: 300px;
+  #icon_article {
+    padding-bottom: 5rem;
   }
 
-  .card_text {
-    max-width: 40ch;
-    text-align: left;
-    padding: 10px;
-    overflow-wrap: break-word;
-    min-height: 40vh;
+  #header_CV img {
+    max-width: 60vw;
+    aspect-ratio: 3/4;
+  }
+
+  figure #pb_cv {
+    display: grid;
+  }
+
+  figure #pb_cv {
+    text-align: center;
+  }
+
+  /* main section*/
+  .icon_and_text {
+    max-width: 70vw;
+  }
+
+  .skills {
+    padding: 1rem;
+  }
+
+  #info {
+    line-height: 1.6rem;
   }
 
   /* FOOTER */
@@ -677,30 +781,15 @@ footer p {
 }
 
 @media screen and (min-width: 1250px) {
- /*hightlight section*/
-  #opposite_img{
+  /*hightlight section*/
+  #opposite_img {
     display: grid;
-    order:-1;
+    order: -1;
   }
 
   .container {
-    gap: 3rem; 
+    gap: 3rem;
   }
-
-  /*CARDS*/
-  #cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 3rem;
-    margin-bottom: 2rem;
-  }
-
-  .card {
-    min-width: 350px;
-  }
-
- 
-  
 }
 
 /* DARK THEME */
