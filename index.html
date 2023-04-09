@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.typekit.net/ayg3dxf.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="frontpage.css" />
   </head>
-  <body></body>
+  <body>
+     <nav>
+      <a class="logo" href="index.html">SR</a>
+      <div>
+        <ul>
+          <li><a href="porfolio.html">Portfolio</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="creative.html">Creative</a></li>
+        </ul>
+      </div>
+      <div class="toggle_container">
+      <input type="checkbox" name="theme" id="switch"/><label for="switch" style="color: whitesmoke">Toggle</label>
+    </div>
+    
+    </ul>
+  </nav>
+    <header>
+      
+      <div class="header">
+        <figure id="col_1">
+          <img id="img_fp" src="graphics/pb_sofia2023 copy.webp" alt="pb på forside" />
+        </figure>
+        <h1 class="header_text">"My name is Sofia and I am confident in frontend development & graphic design"</h1>
+         <a href="portfolio.html"><button class="btn_frontpage">See my work →</button></a> 
+      
+      </div>
+    </header>
+    
+  
+   <footer>
+      <section class="flex contact_text">
+        <div class="footer_div">
+        <h3 class="make_white">about</h3>
+      <p >Sofia S. Rokkedal</p>
+      <p >Multimediadesigner</p>
+      <p id="school">Copenhagen School of <br> technology and design</p>
+       </div>
+       <div class="footer_div">
+      <h3 class="make_white" >CONTACT</h3>
+      <address class="contact_text">
+        <p>Phone: 21180916</p>
+        <p>E-mail: ssimone12@gmail.com</p>
+      </address>
+     </div>
+     <div class="footer_div">
+        <h3 class="make_white">Social</h3>
+        <div class="svg_linkedIn" onclick="window.location.href='https://www.linkedin.com/in/sofia-s-rokkedal/'">
+          <img src="linkedIn.svg" alt="linkedin icon" /></a>
+        </div>
+    </div>
+       </section>
+<div id="copyright">
+      <p class="footerp">© Sofia Simone Rokkedal</p>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script type="module" src="animation.js"></script>
+  </body>
 </html>
+
