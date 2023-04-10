@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.typekit.net/ayg3dxf.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="frontpage.css" />
+  </head>
+  <body>
+     <nav>
+      <a class="logo" href="index.html">SR</a>
+      <div>
+        <ul>
+          <li><a href="porfolio.html">Portfolio</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="creative.html">Creative</a></li>
+        </ul>
+      </div>
+      <div class="toggle_container">
+      <input type="checkbox" name="theme" id="switch"/><label for="switch" style="color: whitesmoke">Toggle</label>
+    </div>
+    
+    </ul>
+  </nav>
+    
+  <header id="header_creatve">
+    <section class="project" id="header_creative">
+            <h1>CREATIVE PROJECTS</h1>
+            <div class="header_text_creative">
+            <p >In my free time, I draw and constantly work on improving my ability to express myself creatively both digitally and on paper. Additionally, I have a strong desire to tell stories and to create something that is valuable and evokes emotions in others.</p>
+        </div>
+        </section>
+     </header>
+
+   <main>
+    <section class="grid_col" id="creative_projects">
+        <h2>Drawings</h2>
+       <div id="drawings_container">
+         <img src="graphics/ansigt.webp" alt="drawing of a face" />
+          <img src="graphics/sommerfugl.webp" alt="drawing 2" />
+          <img src="graphics/kreativt_landskab.webp" alt="drawing 3" />
+          <img src="graphics/kreativt_dreng.webp" alt="drawing 4" />
+        </div>
+      </section>
+
+    <section class="highlight" id="game" >
+        <h2>GAME DESIGN</h2>
+        <p>During the first semester, we were tasked with developing a game. To begin the process, I started with sketching and drawing. Later, I transferred my designs to Adobe Illustrator and used JavaScript for coding the game.</p>
+        <figure id="game_img">
+          <img src="graphics/barspillet.webp" alt="picture of game" />
+          <br>
+      <a href="http://rokkedaldesign.dk/kea/04_animation/spil/spil.html">See full project &#x2794;</a>
+        </figure>
+            
+      </section>
+    <section class="highlight" id="HB">
+        <h2>HJEMBAGT/HOMEBAKED</h2>
+        <p>I have collaborated with fellow students on a product developement assignment involving a bread mix. During the creative process, we selected colors, packaging, and created a logo. In addition, we created the breadmix, which involved ordering the ingredients and being nerdy about dehydrated sourdough, etc. Below are some pictures from the project.</p>
+        <div id="hb_container">
+          <img src="graphics/hb1.webp" alt="Breadmix picture 1" />
+          <img class="hb_img" src="graphics/hb2.webp" alt="Breadmix picture 2" />
+          <img src="graphics/hb3.webp" alt="Breadmix picture 3" />
+        </div>
+</section>
+    
+  </main>
+   
+   <footer>
+      <section class="flex contact_text">
+        <div class="footer_div">
+        <h3 class="make_white">about</h3>
+      <p >Sofia S. Rokkedal</p>
+      <p >Multimediadesigner</p>
+      <p id="school">Copenhagen School of <br> technology and design</p>
+       </div>
+       <div class="footer_div">
+      <h3 class="make_white" >CONTACT</h3>
+      <address class="contact_text">
+        <p>Phone: 21180916</p>
+        <p>E-mail: ssimone12@gmail.com</p>
+      </address>
+     </div>
+     <div class="footer_div">
+        <h3 class="make_white">Social</h3>
+        <div class="svg_linkedIn" onclick="window.location.href='https://www.linkedin.com/in/sofia-s-rokkedal/'">
+          <img src="linkedIn.svg" alt="linkedin icon" /></a>
+        </div>
+    </div>
+       </section>
+<div id="copyright">
+      <p class="footerp">© Sofia Simone Rokkedal</p>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+
