@@ -386,6 +386,8 @@ header p {
 #CV {
   padding: 5rem;
   margin-bottom: 2rem;
+  max-width: 60vw;
+  height: auto;
 }
 
 #header_CV {
@@ -396,8 +398,7 @@ header p {
 }
 
 #header_CV img {
-  max-width: 50vw;
-  max-height: 40vw;
+  max-height: 45vh;
 }
 .make_light {
   color: var(--color-accent2);
@@ -415,8 +416,13 @@ header p {
 
 .flex_col {
   display: flex;
+  justify-content: center;
   gap: 4rem;
 }
+
+  .grid_col {
+    max-width: 60vw;
+  }
 
 figure {
   margin-bottom: 5rem;
@@ -424,6 +430,7 @@ figure {
 
 #info {
   line-height: 2rem;
+  place-content: start;
 }
 
 /* ICON SECTION */
@@ -462,13 +469,12 @@ svg {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-  padding: 2rem;
   margin-bottom: 2rem;
 }
 
 #skills_text {
   font-family: "bebas-neue", sans-serif;
-  font-size: 25px;
+  font-size: 2rem;
   margin: 0%;
 }
 
@@ -493,8 +499,8 @@ svg {
 }
 
 .dot {
-  width: 25px;
-  height: 25px;
+  width: 29px;
+  height: 29px;
   border-radius: 50%;
   border: 1px solid black;
   margin-right: 5px;
@@ -519,8 +525,9 @@ svg {
 }
 
 .grid_col_skills {
-  max-width: 60vw;
+  max-width: 40vw;
   display: grid;
+  padding-inline: 4rem;
 }
 
 .skills {
@@ -529,7 +536,7 @@ svg {
 
 /* EDUCATION  */
 #education {
-  padding: 2rem;
+  padding: 5rem;
   background-color: var(--color-accent1);
   color: white;
 }
@@ -540,7 +547,6 @@ svg {
   text-align: center;
   display: flex;
   padding: 1rem;
-  align-items: top;
   flex-wrap: wrap;
   justify-content: space-evenly;
   color: #ffffff;
@@ -695,6 +701,26 @@ footer p {
     padding-bottom: 4rem;
   }
 
+  #CV {
+  max-width: 90vw;
+  padding: 0px;
+  margin-bottom: 0px;
+  padding-top: 2rem;
+  padding-inline: 2rem;
+  }
+
+  .grid_col {
+    max-width: 80vw;
+  padding: 2rem;
+    padding-top:0px;
+  }
+
+  .flex_col {
+    display: grid;
+    gap: 0px;
+  }
+
+
   figure {
     margin: 0px;
   }
@@ -710,10 +736,28 @@ footer p {
 
   figure #pb_cv {
     display: grid;
+    
   }
 
-  figure #pb_cv {
-    text-align: center;
+  #pb_cv {
+    max-width: 60vw;
+    max-height: 60vh;
+    place-self: center;
+  }
+
+  #skill_container {
+    padding: 0px;
+  margin: 0px;
+  max-width: 70vw;
+  }
+  #skills_text {
+    font-family: "bebas-neue", sans-serif;
+    font-size: 25px;
+    margin: 0%;
+  }
+
+  #education {
+    padding: 2rem;
   }
 
   /* main section*/
@@ -723,6 +767,11 @@ footer p {
 
   .skills {
     padding: 1rem;
+  }
+  .dot {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
   }
 
   #info {
