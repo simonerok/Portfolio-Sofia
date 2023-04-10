@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="frontpage.css" />
   </head>
   <body>
-     <nav>
+    <nav class="navbar">
       <a class="logo" href="index.html">SR</a>
       <div>
-        <ul>
+        <ul class="nav-menu">
           <li><a href="porfolio.html">Portfolio</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="creative.html">Creative</a></li>
@@ -29,8 +29,12 @@
       <div class="toggle_container">
       <input type="checkbox" name="theme" id="switch"/><label for="switch" style="color: whitesmoke">Toggle</label>
     </div>
-    
     </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </nav>
     
   <header id="header_creatve">
@@ -45,7 +49,9 @@
    <main>
     <section class="grid_col" id="creative_projects">
         <h2>Drawings</h2>
-       <div id="drawings_container">
+        <p class="make_light">I am passionate about drawing and expressing my creativity. While attending Rudolf Steiner Skolen in Aarhus for grades 0-6, I had the opportunity to develop my skills in color theory, shapes, and drawing.</p>
+       <br>
+        <div id="drawings_container">
          <img src="graphics/ansigt.webp" alt="drawing of a face" />
           <img src="graphics/sommerfugl.webp" alt="drawing 2" />
           <img src="graphics/kreativt_landskab.webp" alt="drawing 3" />
@@ -55,9 +61,10 @@
 
     <section class="highlight" id="game" >
         <h2>GAME DESIGN</h2>
-        <p>During the first semester, we were tasked with developing a game. To begin the process, I started with sketching and drawing. Later, I transferred my designs to Adobe Illustrator and used JavaScript for coding the game.</p>
+        <p>During the first semester, we were tasked with developing a game. To begin the process, I started with sketching and drawing. Later, I transferred my designs to Adobe Illustrator and used JavaScript for coding the game. This semester i learned the basics of JavaScript and how to place items in CSS and make animations using CSS. Furthermore i gained experience in using Adobe Illustrator.</p>
         <figure id="game_img">
           <img src="graphics/barspillet.webp" alt="picture of game" />
+          <br>
           <br>
       <a href="http://rokkedaldesign.dk/kea/04_animation/spil/spil.html">See full project &#x2794;</a>
         </figure>
@@ -65,7 +72,7 @@
       </section>
     <section class="highlight" id="HB">
         <h2>HJEMBAGT/HOMEBAKED</h2>
-        <p>I have collaborated with fellow students on a product developement assignment involving a bread mix. During the creative process, we selected colors, packaging, and created a logo. In addition, we created the breadmix, which involved ordering the ingredients and being nerdy about dehydrated sourdough, etc. Below are some pictures from the project.</p>
+        <p>I have collaborated with fellow students on a product developement assignment involving a bread mix. During the creative process, we selected colors, packaging, and created a logo. Afterwards we did pictures for marketing (the pictures below). In addition, we created the breadmix, which involved ordering the ingredients and being nerdy about dehydrated sourdough, etc.</p>
         <div id="hb_container">
           <img src="graphics/hb1.webp" alt="Breadmix picture 1" />
           <img class="hb_img" src="graphics/hb2.webp" alt="Breadmix picture 2" />

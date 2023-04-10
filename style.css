@@ -5,7 +5,6 @@
   list-style: none;
 }
 
-
 body {
   margin: 0 auto;
 }
@@ -71,6 +70,44 @@ a:hover {
   text-decoration: underline;
 }
 
+/*************** BURGER ************/
+li {
+  /* dette gør at liste elementerne ikke får prikkerne */
+  list-style: none;
+}
+
+/* er vores container til navigationsmenu*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dette gør at der er et bestemt tidsinterval før animationen sker */
+.nav-link-button {
+  transition: 0.7s ease;
+}
+
+/* Dette er en container hvor vores "bar" ligger i*/
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  z-index: 2;
+}
+
+/*Dette er vores hamburger menu ikon(de 3 streger) */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 /* UI Elements */
 button {
   display: inline-block;
@@ -114,6 +151,12 @@ input[type="text"] {
 }
 
 /* Menu */
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
 nav {
   display: flex;
   padding: 1rem;
@@ -143,7 +186,6 @@ nav a.logo:hover {
 
 nav li {
   display: inline-block;
-  margin: 0px 1rem;
 }
 
 /********************* PORTFOLIO SITE *********************/
@@ -381,6 +423,7 @@ header p {
 }
 #summary h3 {
   color: white;
+  min-width: 75vw;
 }
 
 /************** CV SITE *************/
@@ -421,12 +464,8 @@ header p {
   gap: 4rem;
 }
 
-  .grid_col {
-    max-width: 60vw;
-  }
-
-figure {
-  margin-bottom: 5rem;
+.grid_col {
+  max-width: 60vw;
 }
 
 #info {
@@ -542,77 +581,75 @@ svg {
   color: white;
 }
 
-
-  /****************** CREATIVE SITE **************/
-  #header_creative{
-    padding: 5rem;
-    background-color: var(--color-secondary1);
-    color: white;
-    background-image: url(graphics/kreativt_baggrund.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    min-height: 50vh;
-    text-align: center;
-    display: grid;
-place-content: center;
-  }
-
-  #header_creative p {
-    color: white;
-    text-shadow: 2px 2px 10px #000;
-  }
-  .header_text_creative {
-    max-width: 60vw;
-    text-align: center;
-      place-self: center;
-  }
-
-  #game{
-    padding: 6rem;
-    background-color: var(--color-accent1);
-    min-width: 80vw;
-    max-height: 60vh;
-  }
-
-
-  #hb_container img {
-    aspect-ratio: 1/1;
-  }
-
-
-
-  .hb_img {
-    object-fit: fill;
-  }
-
-  #HB{
-   display: grid;
-    place-content: start;
-    min-height: 60vh;
-    gap:1rem;
-    background-color: var(--color-primary1);
-  }
-  
-
-  #drawings_container img {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 26/23;
-    object-fit: cover;
-  }
-
-  #creative_projects {
-   background-color: var(--color-secondary1);
-   max-width: 100vw;
-   padding: 5rem;
-  }
- 
-
-  main #creative_projects h2 {
+/****************** CREATIVE SITE **************/
+#header_creative {
+  padding: 5rem;
+  background-color: var(--color-secondary1);
   color: white;
-   }
+  background-image: url(graphics/kreativt_baggrund.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 50vh;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  min-height: 80vh;
+}
+
+#header_creative p {
+  color: white;
+  text-shadow: 2px 2px 10px #000;
+}
+.header_text_creative {
+  max-width: 60vw;
+  text-align: center;
+  place-self: center;
+}
+
+#game {
+  padding: 6rem;
+  background-color: var(--color-accent1);
+  min-width: 80vw;
+  min-height: 50vh;
+}
+
+#hb_container img {
+  aspect-ratio: 1/1;
+}
+
+.hb_img {
+  object-fit: fill;
+}
+
+#HB {
+  display: grid;
+  place-content: start;
+  min-height: 60vh;
+  gap: 1rem;
+  background-color: var(--color-primary1);
+}
+
+#drawings_container img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 26/23;
+  object-fit: cover;
+}
+#drawings_container p {
+  max-width: 60vw;
+}
+
+#creative_projects {
+  background-color: var(--color-secondary1);
+  max-width: 100vw;
+  padding: 5rem;
+}
+
+main #creative_projects h2 {
+  color: white;
+}
 
 /* Footer */
 
@@ -684,15 +721,83 @@ footer p {
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
   }
   h3 {
     font-size: 1.35rem;
+  }
+
+  /**************** BURGER MOBIL **********/
+  .toggle_container {
+    padding-right: 2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  /* Dette gør at hamburger menuen skifter fra 3 sterger til et kryds når menuen er synlig*/
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* knappen der trykkes på for at toggle frme of tilbage mellem hamburger og kryds*/
+  .toggle-btn {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    background-color: #dcb3cc;
+    left: 68%;
+    top: 0%;
+    text-align: left;
+    gap: 1rem;
+    z-index: 1;
+    min-height: 25vh;
+    padding-block: 3rem;
+  }
+  .nav-menu.active li a {
+    color: white;
+    z-index: 2;
+    margin: 0px;
+    padding: 0px;
   }
 
   /* PORTFOLIO */
@@ -775,24 +880,23 @@ footer p {
   }
 
   #CV {
-  max-width: 90vw;
-  padding: 0px;
-  margin-bottom: 0px;
-  padding-top: 2rem;
-  padding-inline: 2rem;
+    max-width: 90vw;
+    padding: 0px;
+    margin-bottom: 0px;
+    padding-top: 2rem;
+    padding-inline: 2rem;
   }
 
   .grid_col {
     max-width: 80vw;
-  padding: 2rem;
-    padding-top:0px;
+    padding: 2rem;
+    padding-top: 0px;
   }
 
   .flex_col {
     display: grid;
     gap: 0px;
   }
-
 
   figure {
     margin: 0px;
@@ -809,7 +913,6 @@ footer p {
 
   figure #pb_cv {
     display: grid;
-    
   }
 
   #pb_cv {
@@ -820,8 +923,8 @@ footer p {
 
   #skill_container {
     padding: 0px;
-  margin: 0px;
-  max-width: 70vw;
+    margin: 0px;
+    max-width: 70vw;
   }
   #skills_text {
     font-family: "bebas-neue", sans-serif;
@@ -852,31 +955,34 @@ footer p {
   }
 
   /****************** CREATIVE SITE **************/
-  #game{
+  #game {
     padding: 2rem;
     min-width: 80vw;
     min-height: 60vh;
   }
 
-  #header_creative{
-   padding: 2rem;
-   background-size: cover;
-   background-attachment:local;
-   text-align: center;
-   display: grid;
-place-content: center;
+  #header_creative {
+    padding: 2rem;
+    background-size: cover;
+    background-attachment: local;
+    text-align: center;
+    display: grid;
+    place-content: center;
   }
 
   #creative_projects {
     padding: 2rem;
-  grid-row: 1;
-  display: grid;
+    grid-row: 1;
+    display: grid;
   }
 
   #creative_projects img {
-  width: 70vw;
+    width: 70vw;
   }
 
+  #drawings_container {
+    padding: 3rem;
+  }
 
   /* FOOTER */
 
@@ -931,7 +1037,7 @@ place-content: center;
 
 @media screen and (min-width: 800px) {
   /*creative site*/
-   #drawings_container {
+  #drawings_container {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
@@ -941,6 +1047,9 @@ place-content: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+  p {
+    font-size: 18px;
   }
 }
 
