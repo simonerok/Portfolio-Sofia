@@ -923,11 +923,16 @@ footer p {
     padding: 0px;
     margin: 0px;
     max-width: 70vw;
+    gap: 1rem;
   }
   #skills_text {
     font-family: "bebas-neue", sans-serif;
     font-size: 25px;
     margin: 0%;
+  }
+
+  .skills_p {
+    padding: 2rem;
   }
 
   #education {
@@ -1061,6 +1066,14 @@ footer p {
 
   .container {
     gap: 3rem;
+  }
+
+  .skills {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 1rem;
   }
 }
 
