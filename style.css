@@ -778,16 +778,12 @@ footer p {
     transform: translateY(0);
     opacity: 1;
     display: flex;
-    justify-content: end;
     flex-direction: column;
     background-color: #dcb3cc;
-    left: 68%;
-    top: 0%;
-    text-align: left;
-    gap: 1rem;
+    text-align: center;
+    justify-content: center;
     z-index: 1;
-    min-height: 25vh;
-    padding-block: 3rem;
+    height: 100vh;
   }
   .nav-menu.active li a {
     color: white;
