@@ -5,9 +5,7 @@
   list-style: none;
 }
 
-body {
-  margin: 0 auto;
-}
+
 
 /* Fonts */
 html {
@@ -193,7 +191,7 @@ nav li {
 /* Header */
 #header_portfolio {
   display: flex;
-  min-height: 80vh;
+  max-height: 180vh;
   padding: 5rem;
   align-items: center;
   justify-content: space-around;
@@ -230,7 +228,7 @@ header p {
   border-radius: 30%;
   padding: 1rem;
   margin-bottom: 1rem;
-  margin: 2rem;
+ 
 }
 
 .header_graphics object {
@@ -283,7 +281,6 @@ header p {
   min-width: 250px;
   min-height: 250px;
   padding: 1rem;
-  margin: 3rem;
   background-color: var(--color-accent2);
   border-radius: 300px;
 }
@@ -295,7 +292,6 @@ header p {
 #styletile {
   max-width: 80vw;
   padding: 1rem;
-  margin: 3rem;
   background-color: var(--color-accent2);
   min-width: 40vw;
 }
@@ -481,7 +477,6 @@ header p {
 
 svg {
   margin: 0px;
-  margin-right: 20px;
 }
 
 .icon_and_text {
@@ -524,7 +519,7 @@ svg {
 }
 
 .skills {
-  padding: 0%;
+  padding: 0px;
 }
 
 #skill_level {
@@ -557,6 +552,7 @@ svg {
 #all_the_dots {
   margin: 0px;
   padding: 0px;
+  margin-right: 2rem;
 }
 
 .dot_article {
@@ -712,6 +708,10 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+  body{
+    margin: 0px;
+  }
+
   html {
     font-size: 0.9em;
   }
@@ -814,8 +814,8 @@ footer p {
     min-width: 250px;
     min-height: 150px;
     padding: 1rem;
-    margin: 3rem;
     background-color: var(--color-accent2);
+    margin:0;
   }
 
   .product {
@@ -871,7 +871,9 @@ footer p {
   }
 
   /************** CV SITE *************/
-
+  #all_the_dots {
+    padding-right: 2rem;
+  }
   #header_CV {
     display: grid;
     min-height: 120vh;
@@ -955,6 +957,7 @@ footer p {
   }
 
   /****************** CREATIVE SITE **************/
+
   #game {
     padding: 2rem;
     min-width: 80vw;
@@ -1121,11 +1124,6 @@ label:active:after {
 }
 
 /* SMILEY ANIMATION */
-
-#smiley {
-  margin: 2rem;
-  max-width: 45vw;
-}
 
 .stroke_animation {
   stroke-width: 10px;
